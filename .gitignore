@@ -1,0 +1,16 @@
+#Globals
+*.o
+.cache
+*.pdf
+.vscode
+CPPLINT.cfg
+#Bear make autocompletions json
+compile_commands.json
+#ex00
+MyFirstClassInOrthodoxCanonicalForm
+#ex01
+TowardsAMoreUsefulFixed-pointNumberClass
+#ex02
+NowWeAreTalking
+#ex03
+
