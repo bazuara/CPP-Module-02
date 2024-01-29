@@ -9,7 +9,8 @@
 				"ms-vscode.cpptools-themes",
 				"ms-vscode.cpptools-extension-pack",
 				"twxs.cmake",
-				"ms-vscode.cmake-tools"
+				"ms-vscode.cmake-tools",
+				"mine.cpplint"
 			]
 		}
 	}
