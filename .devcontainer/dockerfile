@@ -1,0 +1,9 @@
+FROM silkeh/clang:11-bullseye
+
+RUN apt update && apt install -y \
+    git \
+    cmake \
+    clang-format \
+    clang-tidy \
+    clang-tools \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
