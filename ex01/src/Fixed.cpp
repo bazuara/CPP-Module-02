@@ -24,7 +24,7 @@ Fixed::Fixed(const int var) {
 
 Fixed::Fixed(const float var) {
   std::cout << "Float constructor called" << std::endl;
-  this->value = roundf(var * (1 << this->fractionalBits));
+  this->value = std::roundf(var * (1 << this->fractionalBits));
 }   // constructor with parameter const float
 
 Fixed::Fixed(const Fixed& src) {
@@ -44,12 +44,10 @@ Fixed
 }   // assignation operator overload
 
 int Fixed::getRawBits(void) const {
-  std::cout << "getRawBits member function called" << std::endl;
   return this->value;
 }   // getRawBits member function
 
 void Fixed::setRawBits(int const raw) {
-  std::cout << "setRawBits member function called" << std::endl;
   this->value = raw;
 }   // setRawBits member function
 
