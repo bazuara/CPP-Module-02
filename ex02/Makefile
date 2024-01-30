@@ -34,11 +34,13 @@ $(OBJECTS):
 clean:
 	@echo "🧹 Deleting objects..."
 	@rm -f $(OBJECTS)
+	@echo "🧹 Deleting leaks reports..."
+	@rm -f leaks.$(NAME).txt
 	@echo "✅ Done!"
 # Rule to remove binary, calls the 'clean' rule first
 fclean: clean
 	@rm -f $(NAME)
-	@echo "Deleted binary $(NAME)"
+	@echo "🧹 Deleting binary named $(NAME)"
 
 # Rule to remove object files and binary, then re-build everything
 re:	fclean all

@@ -6,7 +6,7 @@
 /*   By: bazura <bazuara@student.42madrid.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 16:07:09 by bazura            #+#    #+#             */
-/*   Updated: 2024/01/29 19:23:57 by bazura           ###   ########.fr       */
+/*   Updated: 2024/01/30 12:47:59 by bazura           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ class Fixed {
 
  public:
   Fixed(void);
-  Fixed(const int var);
-  Fixed(const float var);
+  explicit Fixed(const int var);
+  explicit Fixed(const float var);
   Fixed(const Fixed& src);
   ~Fixed(void);
 
