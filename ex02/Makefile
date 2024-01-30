@@ -57,6 +57,6 @@ test: re
 	--show-leak-kinds=all \
 	--verbose \
 	--log-file=leaks.$(NAME).txt \
-	./NowWeAreTalking 
+	./$(NAME) 
 	@echo "\n📚Valgrind summary📚\nCheck leaks.$(NAME).txt for a detailed report."
 	@cat leaks.$(NAME).txt | grep 'ERROR SUMMARY'
