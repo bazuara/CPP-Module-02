@@ -4,6 +4,8 @@
 *.pdf
 .vscode
 CPPLINT.cfg
+#leaks reports
+leaks.*.txt
 #Bear make autocompletions json
 compile_commands.json
 #ex00
