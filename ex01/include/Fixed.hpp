@@ -38,8 +38,8 @@ class Fixed {
 
  public:
   Fixed(void);
-  Fixed(const int var);
-  Fixed(const float var);
+  explicit Fixed(const int var);
+  explicit Fixed(const float var);
   Fixed(const Fixed& src);
   ~Fixed(void);
 

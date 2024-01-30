@@ -52,12 +52,13 @@ void Fixed::setRawBits(int const raw) {
 }   // setRawBits member function
 
 float Fixed::toFloat(void) const {
-  return (float)this->value / (1 << this->fractionalBits);
+  return static_cast<float>(this->value) / (1 << this->fractionalBits);
 }   // toFloat member function
 
 int Fixed::toInt(void) const {
   return this->value >> this->fractionalBits;
 }   // toInt member function
+
 
 std::ostream
 & operator<<(std::ostream& os, const Fixed& var) {
