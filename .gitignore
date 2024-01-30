@@ -2,7 +2,6 @@
 *.o
 .cache
 *.pdf
-.vscode
 CPPLINT.cfg
 #leaks reports
 leaks.*.txt
